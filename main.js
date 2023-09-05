@@ -12,3 +12,8 @@ document.getElementById("startBtn").addEventListener("click", function () {
 document.getElementById("stopBtn").addEventListener("click", function () {
   clearInterval(interval);
 });
+document.body.addEventListener("keydown", function (event) {
+  if (event.key == "Enter") {
+    clearInterval(interval);
+  }
+});
